@@ -1,0 +1,184 @@
+:root {
+  --primary-color: #071F40;
+  --secondary-color: #EE1E36;
+  --accent1-color: #FFF;
+  --accent2-color: #000;
+  --accent3-color: #acabab;
+  --accent4-color: #d2d1d1;
+  --accent5-color: #e4e4e4;
+  --accent6-color: #f7f7f7;
+  --text-font: 'Roboto', sans-serif;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+body {
+  font-family: var(--text-font);
+	font-size: 16px;
+  font-weight: 400;
+}
+h1 {
+  margin: 1rem 0;
+}
+h2 {
+  color: var(--primary-color);
+  margin: 1rem 0;
+}
+h3 {
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  margin: 1rem 0;
+}
+p {
+  margin: 0.5rem 0;
+}
+
+/* Header ***************/
+header {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--accent1-color);
+  background-color: var(--primary-color);
+  border: none;
+}
+header h1 {
+  margin: 0;
+  padding: 2rem;
+}
+
+/* Navigation ***************/
+nav {
+  background-color: var(--accent2-color);
+}
+nav ul {
+  margin: 0;
+  list-style-type: none;
+}
+nav a {
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--accent1-color);
+  padding: 1rem;
+  text-decoration: none;
+}
+nav a:hover {
+  color: var(--secondary-color);
+}
+
+/* larger/wider views **************************/
+@media (min-width: 640px) {
+	nav ul {
+    margin: 0;
+		display: flex;
+    padding: 0;
+	}
+	nav ul li {
+		flex: 1 1 100%;
+	}
+}
+
+/* Main ***************/
+main {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 1rem;
+  margin: 2rem 5rem;
+}
+
+/* Home Page ***************/
+main section {
+	border: 1px solid var(--accent5-color);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(206, 206, 208, 0.5);
+}
+.left-section {
+  grid-column: 1 / 2;
+}
+.right-section {
+  grid-column: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.left-section h2,
+.right-section h2 {
+  text-align: center;
+  margin: 0 0 1rem 0;
+  padding: 1rem 0;
+  color: var(--accent1-color);
+  background-color: var(--primary-color);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.left-section #aboutme {
+  display: flex;
+  align-items: top;
+  padding: 1rem 2rem;
+}
+.left-section #aboutme div {
+  margin-right: 1rem;
+}
+.left-section #aboutme img {
+  float: right;
+  width: 150px;
+  height: 160px;
+  border: 1px solid var(--accent5-color);
+}
+.left-section #aboutme h3 {
+  text-align: center;
+  margin: 1rem 3rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--accent5-color);
+}
+.left-section #molina {
+  display: flex;
+}
+.left-section #molina img {
+  float: left;
+  width: 150px;
+  height: 160px;
+  margin-right: 1rem;
+  border: 1px solid var(--accent5-color);
+}
+.right-section ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 0 0 1rem 3rem;
+}
+.right-section ul li {
+  margin: 0.25rem 0;
+}
+/* Footer ***************/
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.2rem;
+  background-color: var(--primary-color);
+  padding: 3rem 5rem;
+}
+footer p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent1-color);
+}
+footer i {
+  font-size: 0.5rem;
+  color: var(--secondary-color);
+  padding: 0 1rem;
+}
+#lastModified {
+  font-size: 0.85rem;
+  color: var(--accent3-color);
+}
