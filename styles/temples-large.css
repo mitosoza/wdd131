@@ -1,0 +1,32 @@
+/* Large view navigation */
+@media (min-width: 50em) {
+	#navigation-mobile {
+		display: none;
+	}
+  .navigation {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    gap: 2rem;
+  }
+  .navigation li {
+    display: inline;
+  }
+  .navigation a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--accent1-color);
+    text-decoration: none;
+  }
+
+  /* Large view main content */
+  main {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 1rem;
+  }
+  main h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    width: 100%;
+  }
+}
