@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Miguel Soza">
+  <meta name="description" content="WDDD 131 - Dynamic Web Fundamentals | Miguel Soza | Place Page">
+  <title>WDDD 131 - Place Page</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/place.css">
+
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/calculateWindChill.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <span>Chile</span>
+  </header>
+  <main>
+    <div class="container">
+      <div class="hero">
+        <picture>
+          <source srcset="images/chile-large.webp" media="(min-width: 1000px)">
+          <img src="images/chile-small.webp" alt="Chilean Landscape" width="500" height="750">
+        </picture>
+        <div class="overlay">
+          <div class="country-info">
+            <h1>DATA</h1>
+            <div class="data-fields">
+              <div class="info-field">Area:</div>
+              <div class="info-value">756,950 sq km</div>
+              <div class="info-field">Population:</div>
+              <div class="info-value">19.66 million</div>
+              <div class="info-field">Capital:</div>
+              <div class="info-value">Santiago</div>
+              <div class="info-field">Languages:</div>
+              <div class="info-value">Spanish</div>
+              <div class="info-field">Currency:</div>
+              <div class="info-value">Chilean pesos</div>
+              <div class="info-field">Time Zone:</div>
+              <div class="info-value">UTC-3</div>
+              <div class="info-field">Dialing Code:</div>
+              <div class="info-value">+56</div>
+            </div>
+          </div>
+          <div class="country-weather">
+            <h1>WEATHER <span class="weather-icon">☀️</span></h1>
+            <img class="weather-icon-svg" src="images/sunny.svg" alt="Sunny">
+            <div class="data-fields">
+              <div class="info-field">Temperature:</div>
+              <div class="info-value">28°C</div>
+              <div class="info-field">Conditions:</div>
+              <div class="info-value">Sunny</div>
+              <div class="info-field">Wind:</div>
+              <div class="info-value">11 km/h</div>
+              <div class="info-field">Wind Chill:</div>
+              <div id="windChill" class="info-value"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>
+      <span id="currentyear"></span>
+      <span class="circle"></span>
+      <span>Miguel Soza</span>
+      <span class="circle"></span>
+      <span>Molina, Chile</span>
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+
+</html>
