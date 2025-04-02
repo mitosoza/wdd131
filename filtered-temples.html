@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 - Temples</title>
+  <meta name="description" content="Week 02 Picture Album.">
+  <meta name="author" content="Miguel Soza">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+  <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/filtered-temples.js" defer></script>
+  <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <h1>Temple Album</h1>
+    </div>
+    <div class="header-right">
+      <button type="button" id="navigation-mobile"></button>
+      <nav>
+        <ul class="navigation">
+          <li><a href="#" id="homeTab">Home</a></li>
+          <li><a href="#" id="oldTab">Old</a></li>
+          <li><a href="#" id="newTab">New</a></li>
+          <li><a href="#" id="largeTab">Large</a></li>
+          <li><a href="#" id="smallTab">Small</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <h2 id="pageTitle">Home</h2>
+    <div class="res-grid"></div>
+  </main>
+  <footer>
+    <p>
+      <span id="currentyear"></span>
+      <span class="circle"></span>
+      <span>Miguel Soza</span>
+      <span class="circle"></span>
+      <span>Molina, Chile</span>
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
