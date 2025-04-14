@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Basketball Hoops Project">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles/style.css">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/filtered-venues.js" defer></script>
+  <script src="scripts/getDates.js" defer></script>
+
+  <title>Basketball Hoops Project | Venues</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/basketball-logo.webp" alt="Basketball Hoops Logo" loading="lazy">
+    </div>
+    <a id="navigation-menu" href="#"></a>
+    <nav>
+      <ul class="navigation">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="#" class="active">VENUES</a></li>
+        <li><a href="contact.html" class="join-now-button">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div id="venues-content">
+      <h1>Venues</h1>
+      <h3>Filter Venues by:</h3>
+      <ul class="venues-filter">
+        <li><a href="#" id="homeTab">All</a></li>
+        <li><a href="#" id="oldTab">Old</a></li>
+        <li><a href="#" id="newTab">New</a></li>
+        <li><a href="#" id="largeTab">Large</a></li>
+        <li><a href="#" id="smallTab">Small</a></li>
+      </ul>
+      <h2 id="pageTitle">All Venues</h2>
+      <div class="res-grid"></div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-info">
+      <div class="footer-logo">
+        <img src="images/basketball-logo.webp" alt="Basketball Hoops Logo" loading="lazy">
+      </div>
+      <p>info@basketballhoops.com</p>
+      <p>(800) 555-5555</p>
+      <p><span id="currentyear"></span> Basketball Hoops</p>
+      <p id="lastModified"></p>
+    </div>
+    <div class="footer-social">
+      <h3>Social</h3>
+      <ul>
+        <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i>Facebook</a></li>
+        <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></li>
+        <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i>Twitter</a></li>
+        <li><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i>Youtube</a></li>
+      </ul>
+    </div>
+    <div class="footer-resources">
+      <h3>Resources</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="venues.html">Venues</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://byui-cse.github.io/wdd131-ww-course/week06/project-description.html" target="_blank">Project Reference</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
